@@ -1,5 +1,8 @@
 $(function() {
 
-	// Custom JS
+	// adaptive menu
+	$(".toggle-menu").click(function() {
+		$(this).toggleClass("on");
+	});
 
 });

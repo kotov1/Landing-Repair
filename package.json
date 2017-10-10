@@ -1,13 +1,9 @@
 {
-  "name": "starttemplate",
-  "version": "1.0",
-  "description": "optimized start template",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "PP",
-  "license": "ISC",
+  "name": "repair",
+  "version": "1.0.0",
+  "description": "landig page",
+  "main": "gulpfile.js",
+  "dependencies": {},
   "devDependencies": {
     "browser-sync": "^2.18.13",
     "del": "^3.0.0",
@@ -24,5 +20,18 @@
     "gulp-uglify": "^3.0.0",
     "gulp-util": "^3.0.8",
     "vinyl-ftp": "^0.6.0"
-  }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kotov1/Landing-Repair.git"
+  },
+  "author": "PP",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kotov1/Landing-Repair/issues"
+  },
+  "homepage": "https://github.com/kotov1/Landing-Repair#readme"
 }
