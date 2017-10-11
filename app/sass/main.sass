@@ -36,7 +36,7 @@ body textarea:required:valid
 	color: #666
 
 html, body
-	height: 100%
+	// height: 100%
 
 body
 	font-size: 16px
@@ -46,7 +46,8 @@ body
 	font-family: $default-font
 	overflow-x: hidden
 	opacity: 1
-	background: url(../img/bg.jpg)
+	background-image: url(../img/bg.jpg)
+	background-repeat: repeat 
 
 .img-responsive
 	display: block
@@ -106,9 +107,23 @@ body
 
 
 button
+	border: none
+	cursor: pointer
 	&:focus 
 		outline: none
+		
+
+h2
+	font-size: 2.5em  //40/16
+	font-family: 'ProximaNovaSemibold', sans-serif 
+	color: $main-color
+	text-transform: uppercase
+	text-align: center 
+	line-height: 1
+	
 // ==================== GENERAL STYLES END====================
+
+
 
 
 
@@ -164,6 +179,7 @@ button
 		padding-left: 8px 
 		
 
+
 .callback
 	min-height: 100px
 	line-height: 1
@@ -195,7 +211,8 @@ button
 
 		span
 			font:  1.1em 'ProximaNovaSemibold', sans-serif //22/20
-			
+	
+
 	.status-btn_wrap
 
 		.status-btn
@@ -222,10 +239,6 @@ button
 
 
 
-
-
-
-
 .head
 	min-height: 680px 
 	background: url(../img/head.jpg) no-repeat
@@ -244,17 +257,11 @@ button
 		span
 			font: 1.04em 'ProximaNovaBold', sans-serif  //60/55
 
-		
-	
 
 
 
-
-
-
-
-
-
+.navigation
+	background-color: $main-color
 
 .nav
 	position: relative
@@ -264,28 +271,133 @@ button
 		padding: 0
 		list-style-type: none
 		display: flex
-		// justify-content: space-between
+		justify-content: space-between
+		
 	
-	li		
+	li
+		padding: 20px 35px 
+		&.active
+			background-color: $accent-color 
+			a
+				color: $main-color
 		&:hover
 			background-color: $accent-color 
+			a
+				color: $main-color
 	a
-		color: inherit
+		color: $accent-color
 		text-decoration: none
 		text-transform: uppercase
-		cursor: default
 		
 
+// ==================== HEADER END====================
+
+
+// ==================== ADVANTAGES START====================
+.advantages
+	padding-top: 40px 
+	padding-bottom: 20px 
+	background-color: transparent 
+	font-family: 'ProximaNovaSemibold', sans-serif
+	 
+
+	.advantages_cost
+		font-size: 2.1875em //35/16
+		color: $addition-color
+		text-align: center 
+
+	.img-wrap
+		width: 210px
+		height: 210px
+		margin: 0 auto
+		position: relative
+		display: flex
+		align-items: center
+		justify-content: center
+		border-radius: 50%
+		background-color: $main-color
+		
+		&::before
+			content: ""
+			display: inline-block
+			width: 85%
+			height: 85%
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%,-50%)
+			border: 1px solid $accent-color
+			border-radius: 50%
+	
+	.advantages_item
+		margin-top: 10px 
+		font-size: 1.5425em //25/16
+		line-height: 1.2
+		text-align: center
+	
+
+// ==================== ADVANTAGES END====================
 
 
 
-// ==================== HEADER START====================
-
-
+// ==================== CALL START====================
 .call
+	min-height: 460px 
+	padding: 30px 0 
 	background-color: $accent-color
 
+	img
+		transform:
+	
+	.call_content
+		height: 100%
+		display: flex
+		flex-direction: column 
+		justify-content: space-around 
+		align-items: center 
 
+
+	h2
+		margin: 0
+		
+	.call_text
+		margin: 0
+		padding: 0
+		list-style-type: none
+		font-size: 1.875em //30/16
+		text-transform: uppercase
+		color: #333
+		font-weight: bold
+		
+		li
+			position: relative
+			padding-left: 30px 
+			
+			&::before
+				content: ""
+				display: inline-block
+				width: 16px
+				height: 16px
+				border-radius: 50%
+				background-color: $main-color
+				position: absolute
+				top: 50%
+				left: 0
+				transform: translateY(-50%)
+		
+	.call_btn
+		width: 80%
+		padding: 40px 0 
+		font: 1.875em "ProximaNovaSemibold", sans-serif
+		color: #fff
+		text-transform: uppercase
+		line-height: 1.2
+		text-align: center
+		border-radius: 4px
+		background-color: $addition-color
+
+
+// ==================== CALL END====================
 
 
 
